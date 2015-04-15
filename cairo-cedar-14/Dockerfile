@@ -58,10 +58,10 @@ RUN \
   cd /app/vendor/harfbuzz && \
   tar zcf /tmp/harfbuzz-cedar-14.tar.gz .
 
-# ADD ./pango.tar.xz /tmp
-# RUN \
-#   cd /tmp/pango-* && \
-#   ./configure --prefix=/app/vendor/pango && \
-#   make install && \
-#   cd /app/vendor/pango && \
-#   tar zcf /tmp/pango-cedar-14.tar.gz .
+ADD ./pango.tar.xz /tmp
+RUN \
+  cd /tmp/pango-* && \
+  ./configure --prefix=/app/vendor/pango && \
+  make install && \
+  cd /app/vendor/pango && \
+  tar zcf /tmp/pango-cedar-14.tar.gz .
