@@ -46,7 +46,6 @@ vendor "https://s3.amazonaws.com/mojodna-heroku/$STACK/cairo-1.12.16-1.tar.gz"  
 vendor "https://s3.amazonaws.com/mojodna-heroku/$STACK/freetype-2.5.3-1.tar.gz" "$BUILD_DIR/vendor/freetype"
 vendor "https://s3.amazonaws.com/mojodna-heroku/$STACK/giflib-4.2.3-1.tar.gz"   "$BUILD_DIR/vendor/giflib"
 vendor "https://s3.amazonaws.com/mojodna-heroku/$STACK/pixman-0.32.6-1.tar.gz"  "$BUILD_DIR/vendor/pixman"
-vendor "http://ftp.gnome.org/pub/gnome/sources/pango/1.28/pango-1.28.4.tar.gz"  "$BUILD_DIR/vendor/pango"
 
 echo "-----> Tweaking Cairo, FreeType, and Pixman include paths"
 
